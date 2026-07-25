@@ -10,16 +10,15 @@
 <body>
 
     <!-- ================= NAVBAR ================= -->
-
     <header>
         <nav>
-            <h2>PhishGuard AI</h2>
-
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
+           <h2>🛡️ PhishGuard AI</h2>
+           <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">About</a></li>
+           </ul>
+           <button class="nav-btn">Scan Now</button>
         </nav>
     </header>
 
@@ -42,19 +41,15 @@
 
         <section id="analyzer">
 
-            <h2>Analyze Content</h2>
-
-            <textarea
-                id="userInput"
-                placeholder="Paste an email or URL here..."
-                rows="10">
-            </textarea>
-
-            <br><br>
-
-            <button id="analyzeBtn">
-                Analyze
-            </button>
+            <div class="card">
+                <h2>Analyze Content</h2>
+                <textarea
+                    id="userInput"
+                    placeholder="Paste a suspicious email or URL here..."></textarea>
+                <button id="analyzeBtn">
+                    Analyze
+                </button>
+            </div>
 
         </section>
 
@@ -62,23 +57,36 @@
 
         <section id="results">
 
-            <h2>Analysis Result</h2>
+            <div class="card">
 
-            <p><strong>Threat Score:</strong> --</p>
+                <h2>Analysis Result</h2>
 
-            <p><strong>Status:</strong> Waiting for analysis...</p>
+                <div class="status">
+                    <span class="badge" id="status">
+                        Waiting
+                    </span>
+                </div>
 
-            <p><strong>Reason:</strong></p>
+                <p>
+                    <strong>Threat Score:</strong>
+                    <span id="score">--</span>
+                </p>
 
-            <p>No analysis performed yet.</p>
+                <p><strong>Reason:</strong></p>
 
-            <p><strong>Safety Tips:</strong></p>
+                <p id="reason">
+                    Click "Analyze" to begin.
+                </p>
 
-            <ul>
-                <li>Never share passwords.</li>
-                <li>Verify unknown links.</li>
-                <li>Be cautious with urgent requests.</li>
-            </ul>
+                <h3>Safety Tips</h3>
+
+                <ul>
+                    <li>Never share your password.</li>
+                    <li>Verify unknown links.</li>
+                    <li>Ignore suspicious urgency.</li>
+                </ul>
+
+            </div>
 
         </section>
 
