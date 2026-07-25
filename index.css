@@ -1,0 +1,116 @@
+/* ===== Google Font ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== CSS Reset ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Poppins',sans-serif; 
+    background:#0f172a;
+    color:white;
+}
+header{
+    background:#111827;
+    padding:20px 8%;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:#38bdf8;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+#hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+#hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+#hero p{
+    font-size:20px;
+    color:#cbd5e1;
+}
+#analyzer{
+    width:80%;
+    margin:40px auto;
+    text-align:center;
+}
+textarea{
+    width:100%;
+    height:220px;
+    margin-top:20px;
+    padding:20px;
+    border:none;
+    border-radius:12px;
+    background:#1e293b;
+    color:white;
+    font-size:16px;
+    resize:none;
+}
+button{
+    margin-top:20px;
+    padding:15px 40px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+button:hover{
+    background:#1d4ed8;
+}
+#results{
+    width:80%;
+    margin:50px auto;
+    background:#1e293b;
+    padding:30px;
+    border-radius:12px;
+}
+
+#results h2{
+    margin-bottom:20px;
+}
+
+#results p{
+    margin:15px 0;
+}
+
+#results ul{
+    margin-left:20px;
+}
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+    background:#111827;
+}
